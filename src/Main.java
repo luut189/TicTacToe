@@ -36,6 +36,7 @@ public class Main {
     frame.setSize(900, 900);
     frame.getContentPane().setBackground(Color.black);
     frame.setLayout(null);
+    frame.setLocationRelativeTo(null);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setResizable(false);
 
