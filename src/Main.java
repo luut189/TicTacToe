@@ -53,6 +53,7 @@ public class Main {
     	buttons[i].setForeground(Color.white);
     	buttons[i].setBackground(Color.black);
     	buttons[i].addActionListener(new Buttons());
+    	buttons[i].setFocusable(false);
     	gamePanel.add(buttons[i]);
     }
     
