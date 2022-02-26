@@ -24,7 +24,6 @@ public class Main {
     while(true) {
     	Checking.autoCheck();
     	if(Checking.status == 1 || Checking.status == 2 || Checking.status == 3) {
-    		Buttons.isBot = false;
     	}
     }
   }
@@ -68,6 +67,7 @@ public class Main {
     reset.setForeground(Color.white);
     reset.setBackground(Color.black);
     reset.setFont(players);
+    reset.setFocusable(false);
     reset.addActionListener(new Reset());
     resetPanel.add(reset);
     

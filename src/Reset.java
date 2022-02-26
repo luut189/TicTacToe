@@ -3,16 +3,15 @@ import java.awt.event.ActionListener;
 
 public class Reset implements ActionListener {
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		for(int i = 0; i < Main.buttons.length; i++) {
-			Main.buttons[i].setLabel("");
+			Main.buttons[i].setText("");
 			Main.buttons[i].setEnabled(true);
-			Aglo.board[i] = 0;
+			Algo.board[i] = 0;
 		}
 		Checking.status = 0;
-		Aglo.turn = 0;
+		Algo.turn = 0;
 		Main.winner.setText("");
 
 	}

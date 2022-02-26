@@ -5,32 +5,32 @@ public class Checking {
 	
 	public static void autoCheck() {
 		if(
-				(Aglo.board[0] == 1 && Aglo.board[1] == 1 && Aglo.board[2] == 1) ||
-				(Aglo.board[3] == 1 && Aglo.board[4] == 1 && Aglo.board[5] == 1) ||
-				(Aglo.board[6] == 1 && Aglo.board[7] == 1 && Aglo.board[8] == 1) ||
+				(Algo.board[0] == 1 && Algo.board[1] == 1 && Algo.board[2] == 1) ||
+				(Algo.board[3] == 1 && Algo.board[4] == 1 && Algo.board[5] == 1) ||
+				(Algo.board[6] == 1 && Algo.board[7] == 1 && Algo.board[8] == 1) ||
 				
-				(Aglo.board[0] == 1 && Aglo.board[3] == 1 && Aglo.board[6] == 1) ||
-				(Aglo.board[1] == 1 && Aglo.board[4] == 1 && Aglo.board[7] == 1) ||
-				(Aglo.board[2] == 1 && Aglo.board[5] == 1 && Aglo.board[8] == 1) ||
+				(Algo.board[0] == 1 && Algo.board[3] == 1 && Algo.board[6] == 1) ||
+				(Algo.board[1] == 1 && Algo.board[4] == 1 && Algo.board[7] == 1) ||
+				(Algo.board[2] == 1 && Algo.board[5] == 1 && Algo.board[8] == 1) ||
 				
-				(Aglo.board[0] == 1 && Aglo.board[4] == 1 && Aglo.board[8] == 1) ||
-				(Aglo.board[2] == 1 && Aglo.board[4] == 1 && Aglo.board[6] == 1) ) 
+				(Algo.board[0] == 1 && Algo.board[4] == 1 && Algo.board[8] == 1) ||
+				(Algo.board[2] == 1 && Algo.board[4] == 1 && Algo.board[6] == 1) ) 
 		{
 			status = 1;
 		} else if(
-				(Aglo.board[0] == 2 && Aglo.board[1] == 2 && Aglo.board[2] == 2) ||
-				(Aglo.board[3] == 2 && Aglo.board[4] == 2 && Aglo.board[5] == 2) ||
-				(Aglo.board[6] == 2 && Aglo.board[7] == 2 && Aglo.board[8] == 2) ||
+				(Algo.board[0] == 2 && Algo.board[1] == 2 && Algo.board[2] == 2) ||
+				(Algo.board[3] == 2 && Algo.board[4] == 2 && Algo.board[5] == 2) ||
+				(Algo.board[6] == 2 && Algo.board[7] == 2 && Algo.board[8] == 2) ||
 				
-				(Aglo.board[0] == 2 && Aglo.board[3] == 2 && Aglo.board[6] == 2) ||
-				(Aglo.board[1] == 2 && Aglo.board[4] == 2 && Aglo.board[7] == 2) ||
-				(Aglo.board[2] == 2 && Aglo.board[5] == 2 && Aglo.board[8] == 2) ||
+				(Algo.board[0] == 2 && Algo.board[3] == 2 && Algo.board[6] == 2) ||
+				(Algo.board[1] == 2 && Algo.board[4] == 2 && Algo.board[7] == 2) ||
+				(Algo.board[2] == 2 && Algo.board[5] == 2 && Algo.board[8] == 2) ||
 				
-				(Aglo.board[0] == 2 && Aglo.board[4] == 2 && Aglo.board[8] == 2) ||
-				(Aglo.board[2] == 2 && Aglo.board[4] == 2 && Aglo.board[6] == 2) ) 
+				(Algo.board[0] == 2 && Algo.board[4] == 2 && Algo.board[8] == 2) ||
+				(Algo.board[2] == 2 && Algo.board[4] == 2 && Algo.board[6] == 2) ) 
 		{
 			status = 2;
-		} else if(Aglo.turn == 9) {
+		} else if(Algo.turn == 9) {
 			status = 3;
 		} else {
 			status = 0;
